@@ -1,0 +1,35 @@
+.container {
+  .tagsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 16px
+  }
+  .tags{
+    border: 1px solid #7cefc0;
+    margin: 2px;
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-weight: 300;
+    color: #a0a0a0;
+  }
+  .lowConfidenceTags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 16px;
+    p{
+      font-weight: 400;
+      padding: 8px 22px;
+      font-size: 15px;
+    }
+    .lowCtagsDiv {
+      display: flex;
+      div {
+        margin: 4px;
+        @extend .tags;
+      }
+    }
+  }
+}
